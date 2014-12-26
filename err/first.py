@@ -2,4 +2,9 @@
 x = input("Enter the first number: ")
 y = input("Enter the sencond number: ")
 
-print x/y 
+try:
+	print x/y
+except ZeroDivisionError:
+	print "the sencond number can't be zero!"
+
+print 'End'
