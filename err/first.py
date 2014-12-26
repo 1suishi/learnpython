@@ -7,5 +7,8 @@ except ZeroDivisionError:
 	print "the sencond number can't be zero!"
 except TypeError, e:
 	print "That wasn't a number,was it?"
+###	bad use ###
+#except:
+#	print "some wrong is happen"
 
 print 'End'
