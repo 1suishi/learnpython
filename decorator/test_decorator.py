@@ -7,8 +7,8 @@ def log(func):
 	def wrapper(*args,**kw):
 		print "call begin"
 		var =  func(*args , **kw)
-		print "call end"
 		return var
+	print "call end"
 	return wrapper
 
 
