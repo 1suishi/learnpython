@@ -9,7 +9,7 @@ import re
 pattern = re.compile('hello')
  
 # 使用Pattern匹配文本，获得匹配结果，无法匹配时将返回None
-match1 = pattern.match('hello world!')
+match1 = pattern.match('hellohello world!')
 match2 = pattern.match('helloo world!')
 match3 = pattern.match('helllo world!')
 
