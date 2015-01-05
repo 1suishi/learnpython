@@ -65,8 +65,6 @@ class Spider_Model:
     def Start(self):  
         self.enable = True  
         page = self.page
-
-        print page
   
         print u'正在加载中请稍候......'  
           
@@ -100,5 +98,4 @@ print u"""
 print u'请按下回车浏览今日的糗百内容：'  
 raw_input(' ')  
 myModel = Spider_Model()
-print myModel
 myModel.Start()  
