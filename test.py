@@ -1,11 +1,11 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import uuid, time
+def reverse_string(string):
+    print str(reversed(string))
 
-def next_id(t=None):
-	if t is None:
-		t = time.time()
-	return '%015d     %s000' % (int (t*1000),uuid.uuid4().hex)
+print reverse_string("Able was I ere I saw Elba")
 
-print next_id()
+
+print str(reversed("abcd"))
+print sorted("1234")
