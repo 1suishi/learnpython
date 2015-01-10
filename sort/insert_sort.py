@@ -6,8 +6,8 @@ import sys
 def merger(arr,begin,mid,end):
 	lf = arr[begin:mid]
 	rg = arr[mid:end]
-	lf[mid] = sys.maxint
-	rg[end] = sys.maxint
+	lf.append(sys.maxint)
+	rg.append(sys.maxint)
 	l=0
 	r=0
 	for i in range(begin,end):
@@ -19,16 +19,15 @@ def merger(arr,begin,mid,end):
 			r+=1
 
 def merger_sort(arr,begin,end):
-	if begin < end:
+	if begin < end-1:
 		mid = (begin+end)/2
-		print arr[begin:mid]
-		#assert arr[begin:mid] != [10]
 		merger_sort(arr,begin,mid)
 		merger_sort(arr,mid,end)
 		merger(arr,begin,mid,end)
 
 if __name__ =="__main__":
 	arr=[10,8,4,-1,2,6,7,3]
-	#print arr
-	merger_sort(arr,0,len(arr))
-	print "merger_sort is: ",arr
+	arr2=[9]
+	print arr
+	merger_sort(arr2,0,len(arr2))
+	print "merger_sort is: ",arr2
