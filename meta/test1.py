@@ -58,8 +58,7 @@ def main():
     print a
     print a.ma()
 
-    #AbcTest.ma()
-    #AbcTest.mc()
+    
     #a.mc(3)   
     #a.ma()
     #print dir(a)
