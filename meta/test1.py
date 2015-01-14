@@ -23,11 +23,11 @@ class T(object):
 
 class DynamicMethod(type):   
     def __new__(cls, name, bases, dct):
-        '''
+       
         print 'name: ' ,name
         print 'bases: ' ,bases
         print 'dct: ' , dct
-        '''
+        
         if name[:3] =='Abc':
             dct.update(method_dict)
 
